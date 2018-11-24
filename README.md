@@ -8,6 +8,7 @@ pip install chainercv
 pip install opencv-python
 
 2.slackからmain_2_0.py, resnet50_128.caffemodel, vec_list.txtを同じフォルダにダウンロード
+resnet50_128.caffemodelはhttps://github.com/ox-vgg/vgg_face2 からダウンロードお願いします。
 
 3.main_2_0.pyのline12にあるdata_folderを、保存したフォルダのディレクトリに変える。保存
 
