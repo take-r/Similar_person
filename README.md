@@ -1,7 +1,8 @@
 似ている芸能人診断ver2.0マニュアル
 
 1. 皆さんの開発環境と衝突するといけないので、knfと言う名前で（名前は何でもいいです）新しく仮想環境を構築します。
-conda create -n knf python=3.5 source activate knf（windowsの場合はactivate knfかも）
+conda create -n knf python=3.5
+source activate knf（windowsの場合はactivate knfかも）
 conda install chainer
 pip install chainercv
 pip install opencv-python
