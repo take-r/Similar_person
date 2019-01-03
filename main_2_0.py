@@ -9,7 +9,7 @@ import cv2
 import datetime
 
 
-data_folder = './documents'#モデルとtxtデータを保存したフォルダのディレクトリを入力してください
+data_folder = './'
 
 def read_img(img_path):
     img = Image.open(img_path).convert('RGB')
@@ -79,7 +79,7 @@ def capture_camera(mirror=True, size=None):
 
 
 def main():
-    f = CaffeFunction(data_folder + '/resnet50_128.caffemodel')
+    f = CaffeFunction(data_folder + 'resnet50_128.caffemodel')
     
     img_path = capture_camera()
     #frame = frame.resize(256,256)
@@ -95,7 +95,7 @@ def main():
     y_l2norm = np.linalg.norm(y, ord=2, axis=1, keepdims=True)
     normalized_y = y / y_l2norm
 
-    vec_path = data_folder + '/vec_list.txt'
+    vec_path = data_folder + 'vec_list.txt'
     num_people = 96
 
         
