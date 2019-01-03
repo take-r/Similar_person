@@ -1,8 +1,14 @@
-似ている芸能人診断ver2.0マニュアル
+(2018年度文化祭)似ている芸能人診断ver2.0マニュアル
 
-1. 皆さんの開発環境と衝突するといけないので、knfと言う名前で（名前は何でもいいです）新しく仮想環境を構築します。
+動作環境(確認済み)
+mac      :10.13.6
+anaconda :5.1.0
+python   :3.5.6
+chainer  :5.0.0
+
+1. 皆さんの開発環境と衝突するといけないので、knfと言う名前で（違う名前でもいいです）新しく仮想環境を構築します。
 conda create -n knf python=3.5
-source activate knf（windowsの場合はactivate knfかも）
+source activate knf（windowsの場合はactivate knf）
 conda install chainer
 pip install chainercv
 pip install opencv-python
